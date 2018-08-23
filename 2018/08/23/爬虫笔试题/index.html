@@ -50,9 +50,9 @@
 
 
 
-  <meta name="keywords" content="资料, Nlvi" />
+  <meta name="keywords" content="爬虫, Nlvi" />
 
-  <title> 爬虫笔试题 · Miaoy32's Blog </title>
+  <title> 爬虫笔试题(一) · Miaoy32's Blog </title>
 </head>
 <body>
   <div class="progress">
@@ -61,7 +61,7 @@
   <div class="tagcloud-mask"></div>  
 <div class="tagcloud" id="tagcloud">
   <div class="tagcloud-inner">
-    <a href="/tags/OS/" style="font-size: 14px;">OS</a> <a href="/tags/资料/" style="font-size: 14px;">资料</a>
+    <a href="/tags/OS/" style="font-size: 14px;">OS</a> <a href="/tags/爬虫/" style="font-size: 14px;">爬虫</a>
   </div>
 </div>
   <div class="container">
@@ -179,7 +179,7 @@
             </div>
             <div class="mobile-nav-tagcloud">
               <div class="mobile-tagcloud-inner">
-                <a href="/tags/OS/" style="font-size: 14px;">OS</a> <a href="/tags/资料/" style="font-size: 14px;">资料</a>
+                <a href="/tags/OS/" style="font-size: 14px;">OS</a> <a href="/tags/爬虫/" style="font-size: 14px;">爬虫</a>
               </div>
             </div>
           </div>
@@ -224,11 +224,15 @@
         <div class="post-time-wrapper">
           <span>2018-08-23</span>
           
+            
+              <span class="post-category"><a href="/categories/资料/">资料</a></span>
+            
+          
           
             
               <div class="post-tags syuanpi riseIn-light back-3">
               
-                <a href="/tags/资料/">资料</a>
+                <a href="/tags/爬虫/">爬虫</a>
               
               </div>
             
@@ -237,14 +241,14 @@
       </div>
       <h1 class="post-title syuanpi riseIn-light back-2">
         
-          爬虫笔试题
+          爬虫笔试题(一)
         
       </h1>
     </header>
     <div class="post-content syuanpi riseIn-light back-3">
       
       
-        <h2 id="python爬虫开发工程师8-15k："><a href="#python爬虫开发工程师8-15k：" class="headerlink" title="python爬虫开发工程师8-15k："></a>python爬虫开发工程师8-15k：</h2><ol>
+        <h2 id="python爬虫开发工程师："><a href="#python爬虫开发工程师：" class="headerlink" title="python爬虫开发工程师："></a>python爬虫开发工程师：</h2><ol>
 <li>熟悉搜索引擎和网络爬虫相关技术,有爬虫系统开发经验;</li>
 <li>练掌握网页抓取原理及技术,熟悉网页解析过程，具备数据的过滤、清洗、去重、结构化导入经验;</li>
 <li>熟悉分布式爬虫应用和调度策略，掌握各类网站的反爬机制和验证码机制;</li>
@@ -294,17 +298,58 @@
 <li>选取所有带有属性的<code>title</code>元素。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//title[@lang=&apos;eng&apos;]</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h3 id="四、编程题目-根据特定网站写一个小爬虫"><a href="#四、编程题目-根据特定网站写一个小爬虫" class="headerlink" title="四、编程题目,根据特定网站写一个小爬虫"></a>四、编程题目,根据特定网站写一个小爬虫</h3><h3 id="五、说明题"><a href="#五、说明题" class="headerlink" title="五、说明题"></a>五、说明题</h3><ol>
-<li><p>多线程爬虫</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">多线程是为了同步完成多项任务，通过提高资源使用效率来提高系统的效率。线程是在同一时间需要完成多项任务的时候实现的。</span><br><span class="line">包：</span><br><span class="line">import threading</span><br><span class="line">import time</span><br><span class="line"></span><br><span class="line">多线程共享全局变量的问题：</span><br><span class="line">多线程都是在同一个进程中运行的。因此在进程中的全局变量所有线程都是可共享的。这就造成了一个问题，因为线程执行的顺序是无序的。有可能会造成数据错误</span><br><span class="line"></span><br><span class="line">锁机制：</span><br><span class="line">为了解决以上使用共享全局变量的问题。threading提供了一个Lock类，这个类可以在某个线程访问某个变量的时候加锁，其他线程此时就不能进来，直到当前线程处理完后，把锁释放了，其他线程才能进来处理。</span><br><span class="line">Lock版本生产者和消费者模式</span><br><span class="line">Queue线程安全队列</span><br><span class="line">茶客&lt;58132017@163.com&gt; 10:26:59</span><br><span class="line">获取ajax数据的方式：</span><br><span class="line">直接分析ajax调用的接口。然后通过代码请求这个接口。</span><br><span class="line">使用Selenium+chromedriver模拟浏览器行为获取数据。</span><br><span class="line"></span><br><span class="line">from selenium import webdriver  包</span><br><span class="line"></span><br><span class="line">页面等待问题隐式等待  显示等待</span><br><span class="line">切换页面问题</span><br><span class="line">Cookie操作</span><br><span class="line">行为链</span><br><span class="line">设置代理ip</span><br><span class="line">等等</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>动态内容处理ajax</p>
-</li>
-<li><p>表单交互和cookie</p>
-</li>
-<li><p>验证码识别</p>
-</li>
-</ol>
+<h3 id="四、编程题目-根据特定网站写一个小爬虫"><a href="#四、编程题目-根据特定网站写一个小爬虫" class="headerlink" title="四、编程题目,根据特定网站写一个小爬虫"></a>四、编程题目,根据特定网站写一个小爬虫</h3><h3 id="五、说明题"><a href="#五、说明题" class="headerlink" title="五、说明题"></a>五、说明题</h3><h5 id="1-多线程爬虫"><a href="#1-多线程爬虫" class="headerlink" title="1. 多线程爬虫"></a>1. 多线程爬虫</h5><blockquote>
+<p>多线程是为了同步完成多项任务，通过提高资源使用效率来提高系统的效率。线程是在同一时间需要完成多项任务的时候实现的。<br>包：<br><strong>import threading<br>import time</strong><br><strong>多线程共享全局变量的问题：</strong><br>多线程都是在同一个进程中运行的。因此在进程中的全局变量所有线程都是可共享的。这就造成了一个问题，因为线程执行的顺序是无序的。有可能会造成数据错误<br><strong>锁机制：</strong><br>为了解决以上使用共享全局变量的问题。threading提供了一个Lock类，这个类可以在某个线程访问某个变量的时候加锁，其他线程此时就不能进来，直到当前线程处理完后，把锁释放了，其他线程才能进来处理。<br><strong>Lock版本生产者和消费者模式</strong><br><strong>Queue线程安全队列</strong></p>
+</blockquote>
+<h5 id="2-动态内容处理ajax"><a href="#2-动态内容处理ajax" class="headerlink" title="2. 动态内容处理ajax"></a>2. 动态内容处理ajax</h5><blockquote>
+<p><strong>获取ajax数据的方式</strong>：</p>
+<ul>
+<li>直接分析ajax调用的接口。然后通过代码请求这个接口。</li>
+<li>使用Selenium+chromedriver模拟浏览器行为获取数据。</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from selenium import webdriver</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>页面等待问题隐式等待</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>显示等待</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>切换页面问题</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>Cookie操作</strong></p>
+<ul>
+<li>获取所有的cookie：</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">for cookie in driver.get_cookies():</span><br><span class="line">     print(cookie)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>根据cookie的key获取value：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">value = driver.get_cookie(key)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>删除所有的cookie：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.delete_all_cookies()</span><br></pre></td></tr></table></figure>
+<ul>
+<li>删除某个cookie：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.delete_cookie(key)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>行为链</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>设置代理ip</strong></p>
+</blockquote>
+<h5 id="3-表单交互和cookie"><a href="#3-表单交互和cookie" class="headerlink" title="3. 表单交互和cookie"></a>3. 表单交互和cookie</h5><h5 id="4-验证码识别"><a href="#4-验证码识别" class="headerlink" title="4. 验证码识别"></a>4. 验证码识别</h5><blockquote>
+<p><strong>在命令行中使用tesseract识别图像</strong>：<br>那么需要把tesseract.exe所在的目录放到PATH环境变量中。然后使用命令：tesseract 图片路径 文件路径。示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tesseract a.png a</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p><strong>在代码中使用tesseract识别图像</strong>：需要安装的库</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install pytesseract</span><br><span class="line">pip install PIL</span><br></pre></td></tr></table></figure>
 
       
     
@@ -360,8 +405,8 @@
   <div class="post-toc">
     <span class="title" id="toc-switch"><span>文章导航</span></span>
     <div class="toc-inner syuanpi back-1 fallIn-light">
-      <li class="title-link"><a href="javascript:;" class="toTop">爬虫笔试题</a></li>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#python爬虫开发工程师8-15k："><span class="toc-text">python爬虫开发工程师8-15k：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、单选题"><span class="toc-text">一、单选题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、判断题"><span class="toc-text">二、判断题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、XPath解析题"><span class="toc-text">三、XPath解析题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#写出表达式"><span class="toc-text">写出表达式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、编程题目-根据特定网站写一个小爬虫"><span class="toc-text">四、编程题目,根据特定网站写一个小爬虫</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、说明题"><span class="toc-text">五、说明题</span></a></li></ol></li></ol>
+      <li class="title-link"><a href="javascript:;" class="toTop">爬虫笔试题(一)</a></li>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#python爬虫开发工程师："><span class="toc-text">python爬虫开发工程师：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、单选题"><span class="toc-text">一、单选题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、判断题"><span class="toc-text">二、判断题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、XPath解析题"><span class="toc-text">三、XPath解析题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#写出表达式"><span class="toc-text">写出表达式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、编程题目-根据特定网站写一个小爬虫"><span class="toc-text">四、编程题目,根据特定网站写一个小爬虫</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、说明题"><span class="toc-text">五、说明题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-多线程爬虫"><span class="toc-text">1. 多线程爬虫</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-动态内容处理ajax"><span class="toc-text">2. 动态内容处理ajax</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-表单交互和cookie"><span class="toc-text">3. 表单交互和cookie</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-验证码识别"><span class="toc-text">4. 验证码识别</span></a></li></ol></li></ol></li></ol></li></ol>
     </div>
   </div>
 
