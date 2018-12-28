@@ -298,7 +298,7 @@
 <li>选取所有带有属性的<code>title</code>元素。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//title[@lang=&apos;eng&apos;]</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h3 id="四、编程题目-根据特定网站写一个小爬虫"><a href="#四、编程题目-根据特定网站写一个小爬虫" class="headerlink" title="四、编程题目,根据特定网站写一个小爬虫"></a>四、编程题目,根据特定网站写一个小爬虫</h3><h3 id="五、说明题"><a href="#五、说明题" class="headerlink" title="五、说明题"></a>五、说明题</h3><h5 id="1-多线程爬虫"><a href="#1-多线程爬虫" class="headerlink" title="1. 多线程爬虫"></a>1. 多线程爬虫</h5><blockquote>
+<h3 id="四、编程题目-写一个爬虫"><a href="#四、编程题目-写一个爬虫" class="headerlink" title="四、编程题目,写一个爬虫"></a>四、编程题目,写一个爬虫</h3><h3 id="五、说明题"><a href="#五、说明题" class="headerlink" title="五、说明题"></a>五、说明题</h3><h5 id="1-多线程爬虫"><a href="#1-多线程爬虫" class="headerlink" title="1. 多线程爬虫"></a>1. 多线程爬虫</h5><blockquote>
 <p>多线程是为了同步完成多项任务，通过提高资源使用效率来提高系统的效率。线程是在同一时间需要完成多项任务的时候实现的。<br>包：<br><strong>import threading<br>import time</strong><br><strong>多线程共享全局变量的问题：</strong><br>多线程都是在同一个进程中运行的。因此在进程中的全局变量所有线程都是可共享的。这就造成了一个问题，因为线程执行的顺序是无序的。有可能会造成数据错误<br><strong>锁机制：</strong><br>为了解决以上使用共享全局变量的问题。threading提供了一个Lock类，这个类可以在某个线程访问某个变量的时候加锁，其他线程此时就不能进来，直到当前线程处理完后，把锁释放了，其他线程才能进来处理。<br><strong>Lock版本生产者和消费者模式</strong><br><strong>Queue线程安全队列</strong></p>
 </blockquote>
 <h5 id="2-动态内容处理ajax"><a href="#2-动态内容处理ajax" class="headerlink" title="2. 动态内容处理ajax"></a>2. 动态内容处理ajax</h5><blockquote>
@@ -383,6 +383,12 @@
     
   <nav class="article-page">
     
+      <a href="/2018/12/28/数据库考试题题型/" id="art-left" class="art-left">
+        <span class="next-title">
+          <i class="iconfont icon-left"></i>数据库考试题题型
+        </span>
+      </a>
+    
     
       <a href="/2018/05/01/SJF/" id="art-right" class="art-right">
         <span class="prev-title"> 
@@ -406,7 +412,7 @@
     <span class="title" id="toc-switch"><span>文章导航</span></span>
     <div class="toc-inner syuanpi back-1 fallIn-light">
       <li class="title-link"><a href="javascript:;" class="toTop">爬虫笔试题(一)</a></li>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#python爬虫开发工程师："><span class="toc-text">python爬虫开发工程师：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、单选题"><span class="toc-text">一、单选题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、判断题"><span class="toc-text">二、判断题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、XPath解析题"><span class="toc-text">三、XPath解析题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#写出表达式"><span class="toc-text">写出表达式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、编程题目-根据特定网站写一个小爬虫"><span class="toc-text">四、编程题目,根据特定网站写一个小爬虫</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、说明题"><span class="toc-text">五、说明题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-多线程爬虫"><span class="toc-text">1. 多线程爬虫</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-动态内容处理ajax"><span class="toc-text">2. 动态内容处理ajax</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-表单交互和cookie"><span class="toc-text">3. 表单交互和cookie</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-验证码识别"><span class="toc-text">4. 验证码识别</span></a></li></ol></li></ol></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#python爬虫开发工程师："><span class="toc-text">python爬虫开发工程师：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、单选题"><span class="toc-text">一、单选题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、判断题"><span class="toc-text">二、判断题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、XPath解析题"><span class="toc-text">三、XPath解析题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#写出表达式"><span class="toc-text">写出表达式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、编程题目-写一个爬虫"><span class="toc-text">四、编程题目,写一个爬虫</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、说明题"><span class="toc-text">五、说明题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-多线程爬虫"><span class="toc-text">1. 多线程爬虫</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-动态内容处理ajax"><span class="toc-text">2. 动态内容处理ajax</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-表单交互和cookie"><span class="toc-text">3. 表单交互和cookie</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-验证码识别"><span class="toc-text">4. 验证码识别</span></a></li></ol></li></ol></li></ol></li></ol>
     </div>
   </div>
 
