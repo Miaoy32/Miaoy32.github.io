@@ -50,7 +50,9 @@
 
 
 
-  <title> 十二月总结 · Miaoy32's Blog </title>
+  <meta name="keywords" content="大三, Nlvi" />
+
+  <title> DB历年简答题 · Miaoy32's Blog </title>
 </head>
 <body>
   <div class="progress">
@@ -220,23 +222,72 @@
     <header class="post-header">
       <div class="post-time syuanpi riseIn-light back-1">
         <div class="post-time-wrapper">
-          <span>2018-01-02</span>
+          <span>2019-01-05</span>
           
           
+            
+              <div class="post-tags syuanpi riseIn-light back-3">
+              
+                <a href="/tags/大三/">大三</a>
+              
+              </div>
             
           
         </div>
       </div>
       <h1 class="post-title syuanpi riseIn-light back-2">
         
-          十二月总结
+          DB历年简答题
         
       </h1>
     </header>
     <div class="post-content syuanpi riseIn-light back-3">
       
       
-        <p>时间过得好快，12月也没做什么，学会了用Hexo创建个人博客，遇到比较坑的事情就是福昕阅读器把4000端口占用了，所以<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 无法实现本地页面预览，把它卸载之后就好了；熟悉了Flash cs6 软件的操作，掌握了补间动画、引导动画、遮罩动画的基本制作。接下来认真复习，迎接期末。</p>
+        <h3 id="DB历年简答题"><a href="#DB历年简答题" class="headerlink" title="DB历年简答题"></a>DB历年简答题</h3><p><strong>1.  试述数据库系统三级模式结构，这种结构的优点是什么?</strong></p>
+<blockquote>
+<ol>
+<li>数据库系统的三级模式结构是指数据库系统是由外模式、模式和内模式三级构成。数据库系统的三级模式是对数据的三个抽象级别，它把数据的具体组织留给DBMS管理，使用户能逻辑地抽象地处理数据，而不必关心数据在计算机中的具体表示方式与存储方式。为了能够在内部实现这三个抽象层次的联系和转换，数据库管理系统在这三级模式之间提供了两层映象包括：外模式／模式映象  模式／内模式映象，正是这两层映象保证了数据库系统中的数据能够具有较高的逻辑独立性和物理独立性。</li>
+</ol>
+</blockquote>
+<p><strong>2.  试述查询优化的一般准则</strong></p>
+<blockquote>
+<p>( l ）选择运算应尽可能先做； ( 2 ）把投影运 算和选择运算同时进行； ( 3 ）把投影同其前或其后的双目运算结合起来执行； ( 4 ）把 某些选择同在它前面要执行的笛卡儿积结合起来成为一个连接运算； ( 5 ）找出公共子表 达式； ( 6 ）选取合适的连接算法。</p>
+</blockquote>
+<p><strong>3.  什么是基本表?什么是视图?两者的区别和联系是什么?</strong></p>
+<blockquote>
+<p>基本表是本身独立存在的表，在SQL中一个关系就对应一个表。一个(或多个)基本表对应一个存储文件，一个表可以带若干索引，索引也存放在存储文件中。视图是从一个或几个基本表导出的表。它本身不独立存储在数据库中，即数据库中只存放视图的定义而不存放视图对应的数据，这些数据仍存放在导出视图的基本表中，因此视图是一个虚表。视图在概念上与基本表等同，用户可以在视图上再定义视图。</p>
+</blockquote>
+<p><strong>4.  简述数据库设计的过程。</strong></p>
+<blockquote>
+<p>按照规范设计的方法，考虑数据库及其应用系统开发全过程，将数据库设计分为以下六个阶段：<br>需求分析、概念结构设计、逻辑结构设计、物理结构设计、数据库实施 、数据库运行和维护 。</p>
+</blockquote>
+<p><strong>5.  什么是数据冗余?它会引起哪些操作异常?</strong></p>
+<blockquote>
+<p>数据冗余是指数据大量的重复，使数据之间联系弱，不利于操作。它会引起：修改异常、删除异常、插入异常。</p>
+</blockquote>
+<p><strong>6.  数据字典的内容和作用是什么？</strong></p>
+<blockquote>
+<p>数据字典是系统中各类数据描述的集合。数据字典的内容通常包括： ( l ）数据项； ( 2 ）数据结构； ( 3 ）数据流； ( 4 ）数据存储； ( 5 ）处理过程五个部分。其中数据项是 数据的最小组成单位，若干个数据项可以组成一个数据结构。数据字典通过对数据项和数据 结构的定义来描述数据流和数据存储的逻辑内容。数据字典的作用：数据字典是关于数据库 中数据的描述，在需求分析阶段建立，是下一步进行概念设计的基础，并在数据库设计过 程中不断修改、充实、完盖。</p>
+</blockquote>
+<p><strong>7.  简述在SQL语言中，引入视图机制的主要优点。</strong></p>
+<blockquote>
+<ol start="2">
+<li>简化用户的操作；能以多种角度看待同一数据；对重构数据库提供了一定程度的逻辑独立性；对机密数据提供安全保护；可以更清晰的表达查询。</li>
+</ol>
+</blockquote>
+<p><strong>8.  什么叫数据与程序的物理独立性?什么叫数据与程序的逻辑独立性?为什么数据库系统具有数据与程序的独立性?</strong></p>
+<blockquote>
+<p>当数据库的存储结构改变了(例如选用了另一种存储结构)，由数据库管理员对模式／内模式映象作相应改变，可以使模式保持不变，从而应用程序也不必改变。保证了程序与数据的物理独立性,简称数据的物理独立性。<br>当需要改变模式时(例如增加新的关系、新的属性、改变属性的数据类型、改变数据间的联系等)，由数据库管理员对各个外模式／模式的映象作相应改变，而使外模式保持不变，从而不必修改或重写应用程序改。而应用程序是依据数据的外模式编写的，保证了数据与程序的逻辑独立性。简称数据的逻辑独立性。<br>特定的应用程序是在外模式描述的数据结构上编制的，它依赖于特定的外模式，与数据库的模式和存储结构独立。不同的应用程序有时可以共用同一个外模式。数据库的二级映象保证了数据库外模式的稳定性，从而从底层保证了应用程序的稳定性，除非应用需求本身发生变化，否则应用程序一般不需要修改</p>
+</blockquote>
+<p><strong>9.  什么是数据库的再组织和重构造? 为什么要进行数据库的再组织和重构造?</strong></p>
+<blockquote>
+<p>在重组织的过程中，按原设计要求重新安排存储位置、回收垃圾、减少指针链等，提高系统性能。数据库的重组织，并不修改原设计的逻辑和物理结构，而数据库的重构造则不同，它是指部分修改数据库的模式和内模式。数据库运行一段时间后，由于记录不断增、删、改，会使数据库的物理存储情况变坏，降低了数据的存取效率，数据库性能下降，这时DBA就要对数据库进行重组织，或部分重组织(只对频繁增、删的表进行重组织)。</p>
+</blockquote>
+<p><strong>10.  为什么说RDBMS的查询优化比用户程序“优化”做的更好？</strong></p>
+<blockquote>
+<p>（1）优化器可以从数据字典中获取许多统计信息，可以根据这些信息做出正确的估算，选择高效的执行计划，而用户程序则难以获得这些信息。（2）如果数据库的物理统计信息改变了，系统可以自动对查询进行重新优化以选择相适应的执行计划。（3）优化器可以考虑数百种不同的执行计划，而程序员一般只能考虑有限的几种。（4）优化器中包括了很多复杂的优化技术，这些优化技术往往只有最好的程序员才能掌握。</p>
+</blockquote>
 
       
     
@@ -252,7 +303,7 @@
     </div>
     <div class="copy-url">
       <span>地址 :</span>
-      <a href="http://yoursite.com/2018/01/02/hhh/">http://yoursite.com/2018/01/02/hhh/</a>
+      <a href="http://yoursite.com/2019/01/05/DB历年简答题/">http://yoursite.com/2019/01/05/DB历年简答题/</a>
     </div>
     <div class="copy-origin">
       <span>来源 :</span>
@@ -270,12 +321,12 @@
     
   <nav class="article-page">
     
-      <a href="/2018/05/01/hello-world/" id="art-left" class="art-left">
-        <span class="next-title">
-          <i class="iconfont icon-left"></i>Hello World
+    
+      <a href="/2018/12/28/面向对象简答题/" id="art-right" class="art-right">
+        <span class="prev-title"> 
+          面向对象简答题<i class="iconfont icon-right"></i>  
         </span>
       </a>
-    
     
   </nav>
 
@@ -292,8 +343,8 @@
   <div class="post-toc">
     <span class="title" id="toc-switch"><span>文章导航</span></span>
     <div class="toc-inner syuanpi back-1 fallIn-light">
-      <li class="title-link"><a href="javascript:;" class="toTop">十二月总结</a></li>
-      
+      <li class="title-link"><a href="javascript:;" class="toTop">DB历年简答题</a></li>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#DB历年简答题"><span class="toc-text">DB历年简答题</span></a></li></ol>
     </div>
   </div>
 
